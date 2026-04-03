@@ -56,7 +56,6 @@ body {
 </style>
 </head>
 <body class="antialiased">
-<!-- CONFIRMATION: NEITHER Mermaid JS NOR SVG were used in this output. PALETTE: Cyber-Clinical (Slate 900, Cyan, Magenta, Yellow accents). PLAN: Hero -> Pharmacology -> Kinetics -> Dosing -> Retail Routing (O2O to Physical POS) -> Infrastructure. VISUALS: Radar (Compare), Area (Timeline), Doughnut (Composition), HTML Nodes (Flowchart). -->
 
 <header class="bg-slate-900 border-b border-cyan-500/30 sticky top-0 z-50 shadow-lg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center">
@@ -68,7 +67,7 @@ body {
             <a href="#pharmacology" class="text-slate-300 hover:text-cyan-400 transition-colors">Pharmacology</a>
             <a href="#kinetics" class="text-slate-300 hover:text-cyan-400 transition-colors">Kinetics</a>
             <a href="#dosing" class="text-slate-300 hover:text-cyan-400 transition-colors">Dosing</a>
-            <a href="#retail" class="text-slate-300 hover:text-cyan-400 transition-colors">Retail Routing</a>
+            <a href="#acquisition" class="text-slate-300 hover:text-cyan-400 transition-colors">Acquisition Protocols</a>
             <a href="#infrastructure" class="text-slate-300 hover:text-cyan-400 transition-colors">Infrastructure</a>
         </nav>
     </div>
@@ -183,66 +182,95 @@ body {
 
     <section id="retail" class="bg-slate-900 p-8 rounded-2xl border border-cyan-500/50 glow-cyan relative overflow-hidden">
         <div class="text-center max-w-3xl mx-auto mb-10">
-            <h3 class="text-3xl font-bold text-white mb-4">Retail Routing Protocol (O2O)</h3>
+            <h3 class="text-3xl font-bold text-white mb-4">Dual Acquisition Protocols (O2O & D2C)</h3>
             <p class="text-slate-300 leading-relaxed">
-                Processing high-risk transactions online introduces severe payment gateway friction. The Online-to-Offline (O2O) protocol solves this by capturing digital and physical leads, then actively routing them to complete their purchase anonymously at a local brick-and-mortar retailer.
+                Processing high-risk transactions online introduces severe payment gateway friction. <strong>Online-to-Offline (O2O)</strong> vectors route digital leads to physical POS purchases. <strong>Direct-to-Consumer (D2C)</strong> vectors capture high-trust buyers directly into recurring subscriptions.
             </p>
         </div>
         
-        <div class="flex flex-col lg:flex-row items-stretch justify-center gap-4 relative z-10">
-            
-            <div class="bg-slate-800 p-5 border border-slate-600 rounded-lg w-full lg:w-[30%] flex flex-col">
-                <div class="text-cyan-400 font-bold mb-4 text-center text-lg border-b border-slate-700 pb-2">1. The Catalyst</div>
-                <div class="space-y-3 flex-grow">
-                    <div class="bg-slate-900 p-3 rounded border border-slate-700 shadow-sm">
-                        <div class="flex items-center mb-1">
-                            <span class="text-lg mr-2">&#128187;</span>
-                            <strong class="text-white text-sm">Dark Social</strong>
+        <!-- O2O Track -->
+        <div class="mb-10">
+            <h4 class="text-xl font-bold text-cyan-400 mb-6 text-center border-b border-slate-700 pb-2">Online-to-Offline (O2O) Routing</h4>
+            <div class="flex flex-col lg:flex-row items-stretch justify-center gap-4 relative z-10">
+                
+                <div class="bg-slate-800 p-4 border border-slate-600 rounded-lg w-full lg:w-[30%] flex flex-col">
+                    <div class="text-cyan-400 font-bold mb-3 text-center text-sm uppercase">1. O2O Discovery</div>
+                    <div class="space-y-2 flex-grow">
+                        <div class="bg-slate-900 p-2 rounded border border-slate-700 shadow-sm">
+                            <strong class="text-white text-xs block mb-1">&#128187; Dark Social</strong>
+                            <span class="text-[10px] text-slate-400 leading-tight block">Telegram/Substack links evading ad-bot bans.</span>
                         </div>
-                        <p class="text-xs text-slate-400">Telegram/Substack links circumventing digital ad bans.</p>
-                    </div>
-                    <div class="bg-slate-900 p-3 rounded border border-slate-700 shadow-sm">
-                        <div class="flex items-center mb-1">
-                            <span class="text-lg mr-2">&#128230;</span>
-                            <strong class="text-white text-sm">Trial Sample Packs</strong>
+                        <div class="bg-slate-900 p-2 rounded border border-slate-700 shadow-sm">
+                            <strong class="text-white text-xs block mb-1">&#127973; Practitioner Referral</strong>
+                            <span class="text-[10px] text-slate-400 leading-tight block">In-clinic brochures from integration therapists.</span>
                         </div>
-                        <p class="text-xs text-slate-400">Physical 2mg blister hand-outs at biohacking events.</p>
-                    </div>
-                    <div class="bg-slate-900 p-3 rounded border border-slate-700 shadow-sm">
-                        <div class="flex items-center mb-1">
-                            <span class="text-lg mr-2">&#127973;</span>
-                            <strong class="text-white text-sm">Practitioner Referral</strong>
+                        <div class="bg-slate-900 p-2 rounded border border-slate-700 shadow-sm">
+                            <strong class="text-white text-xs block mb-1">&#128205; Geo-Targeted SEO</strong>
+                            <span class="text-[10px] text-slate-400 leading-tight block">Organic search bypassing AUP flags.</span>
                         </div>
-                        <p class="text-xs text-slate-400">In-clinic brochures distributed by integration therapists.</p>
                     </div>
                 </div>
+                
+                <div class="text-cyan-500 text-3xl hidden lg:flex items-center justify-center font-black">&#8594;</div>
+                <div class="text-cyan-500 text-3xl flex lg:hidden items-center justify-center font-black py-1">&#8595;</div>
+                
+                <div class="bg-slate-800 p-4 border border-cyan-400 rounded-lg text-center w-full lg:w-[20%] flex flex-col items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.3)]">
+                    <div class="text-3xl mb-3">&#128205;</div>
+                    <div class="text-white font-bold mb-2 text-sm">2. Location Engine</div>
+                    <p class="text-xs text-slate-400">API dynamically routes the user to the nearest local inventory via Site 1.</p>
+                </div>
+                
+                <div class="text-cyan-500 text-3xl hidden lg:flex items-center justify-center font-black">&#8594;</div>
+                <div class="text-cyan-500 text-3xl flex lg:hidden items-center justify-center font-black py-1">&#8595;</div>
+                
+                <div class="bg-slate-800 p-4 border border-slate-600 rounded-lg text-center w-full lg:w-[20%] flex flex-col items-center justify-center">
+                    <div class="text-3xl mb-3">&#128663;</div>
+                    <div class="text-magenta-400 font-bold mb-2 text-sm">3. Physical Routing</div>
+                    <p class="text-xs text-slate-400">User travels to verified brick-and-mortar partner (Smoke Shop, Gas Station, Kava Bar, etc.).</p>
+                </div>
+                
+                <div class="text-cyan-500 text-3xl hidden lg:flex items-center justify-center font-black">&#8594;</div>
+                <div class="text-cyan-500 text-3xl flex lg:hidden items-center justify-center font-black py-1">&#8595;</div>
+                
+                <div class="bg-slate-800 p-4 border border-yellow-500/50 rounded-lg text-center w-full lg:w-[20%] flex flex-col items-center justify-center">
+                    <div class="text-3xl mb-3">&#128181;</div>
+                    <div class="text-yellow-400 font-bold mb-2 text-sm">4. Retail Purchase</div>
+                    <p class="text-xs text-slate-400">Anonymous POS physical transaction. Zero risk of digital payment gateway blocks.</p>
+                </div>
             </div>
-            
-            <div class="text-cyan-500 text-3xl hidden lg:flex items-center justify-center font-black">&#8594;</div>
-            <div class="text-cyan-500 text-3xl flex lg:hidden items-center justify-center font-black py-2">&#8595;</div>
-            
-            <div class="bg-slate-800 p-6 border border-cyan-400 rounded-lg text-center w-full lg:w-[20%] flex flex-col items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.3)]">
-                <div class="text-3xl mb-3">&#128205;</div>
-                <div class="text-white font-bold mb-2 text-lg">2. Location Engine</div>
-                <p class="text-sm text-slate-400">User scans the QR or clicks the link, landing on Site 1 (Informational). The API dynamically routes the user to the nearest local inventory.</p>
-            </div>
-            
-            <div class="text-cyan-500 text-3xl hidden lg:flex items-center justify-center font-black">&#8594;</div>
-            <div class="text-cyan-500 text-3xl flex lg:hidden items-center justify-center font-black py-2">&#8595;</div>
-            
-            <div class="bg-slate-800 p-6 border border-slate-600 rounded-lg text-center w-full lg:w-[20%] flex flex-col items-center justify-center">
-                <div class="text-3xl mb-3">&#128663;</div>
-                <div class="text-magenta-400 font-bold mb-2 text-lg">3. Physical Routing</div>
-                <p class="text-sm text-slate-400">User travels to the verified brick-and-mortar partner (e.g., local Smoke Shop, Gas Station, or Kava Bar) mapped by the Store Locator.</p>
-            </div>
-            
-            <div class="text-cyan-500 text-3xl hidden lg:flex items-center justify-center font-black">&#8594;</div>
-            <div class="text-cyan-500 text-3xl flex lg:hidden items-center justify-center font-black py-2">&#8595;</div>
-            
-            <div class="bg-slate-800 p-6 border border-yellow-500/50 rounded-lg text-center w-full lg:w-[20%] flex flex-col items-center justify-center">
-                <div class="text-3xl mb-3">&#128181;</div>
-                <div class="text-yellow-400 font-bold mb-2 text-lg">4. Retail Purchase</div>
-                <p class="text-sm text-slate-400">Customer completes a physical Point-of-Sale transaction. Eliminates high-risk digital payment scrutiny entirely.</p>
+        </div>
+
+        <!-- D2C Track -->
+        <div class="pt-8 border-t border-slate-700/50">
+            <h4 class="text-xl font-bold text-yellow-400 mb-6 text-center border-b border-slate-700 pb-2">Direct-to-Consumer (D2C) Subscription Routing</h4>
+            <div class="flex flex-col lg:flex-row items-stretch justify-center gap-4 relative z-10">
+                
+                <div class="bg-slate-800 p-4 border border-slate-600 rounded-lg w-full lg:w-[45%] flex flex-col">
+                    <div class="text-yellow-400 font-bold mb-3 text-center text-sm uppercase">1. D2C Subscription Vectors</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 flex-grow">
+                        <div class="bg-slate-900 p-3 rounded border border-slate-700 shadow-sm flex flex-col justify-center">
+                            <strong class="text-white text-sm mb-1">&#128230; Post-Retail Box QR</strong>
+                            <span class="text-xs text-slate-400 leading-tight">Physical QR on the retail box converts one-time buyers into digital subs.</span>
+                        </div>
+                        <div class="bg-slate-900 p-3 rounded border border-slate-700 shadow-sm flex flex-col justify-center">
+                            <strong class="text-white text-sm mb-1">&#127908; Podcast Promo Codes</strong>
+                            <span class="text-xs text-slate-400 leading-tight">Audio codes bypass web-scrapers, driving checkout via influencer trust.</span>
+                        </div>
+                        <div class="bg-slate-900 p-3 rounded border border-slate-700 shadow-sm flex flex-col justify-center sm:col-span-2">
+                            <strong class="text-white text-sm mb-1">&#127926; Trial Blister QR (Music Festivals/Events)</strong>
+                            <span class="text-xs text-slate-400 leading-tight">Free 2mg sample handed out directly to target demographics at festivals. The QR captures the user at the moment of positive efficacy, routing directly to D2C checkout and bypassing retail margins.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-yellow-500 text-3xl hidden lg:flex items-center justify-center font-black">&#8594;</div>
+                <div class="text-yellow-500 text-3xl flex lg:hidden items-center justify-center font-black py-1">&#8595;</div>
+
+                <div class="bg-slate-800 p-6 border border-yellow-500/50 rounded-lg text-center w-full lg:w-[50%] flex flex-col items-center justify-center">
+                    <div class="text-4xl mb-4">&#128241;</div>
+                    <div class="text-yellow-400 font-bold mb-2 text-lg">2. Recurring Subscription Protocol</div>
+                    <p class="text-sm text-slate-400 max-w-sm">User enters the automated WooCommerce recurring billing cycle via the NMI tokenized gateway, establishing long-term Lifetime Value (LTV).</p>
+                </div>
             </div>
         </div>
     </section>
